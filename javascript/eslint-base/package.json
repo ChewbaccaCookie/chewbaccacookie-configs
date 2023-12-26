@@ -2,7 +2,9 @@
     "name": "@chewbaccacookie/eslint-config-base",
     "version": "1.0.0",
     "main": "index.js",
-    "scripts": {},
+    "scripts": {
+        "release": "npm publish --access public"
+    },
     "peerDependencies": {
         "@chewbaccacookie/prettier-config": ">=1.0.0",
         "eslint": ">=8.38.0",

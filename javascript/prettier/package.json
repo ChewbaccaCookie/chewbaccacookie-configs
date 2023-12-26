@@ -2,6 +2,9 @@
     "name": "@chewbaccacookie/prettier-config",
     "version": "1.0.0",
     "main": "index.json",
+    "scripts": {
+        "release": "npm publish --access public"
+    },
     "peerDependencies": {
         "prettier": ">=3.0.0"
     },
