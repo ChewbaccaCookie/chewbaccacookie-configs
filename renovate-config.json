@@ -1,0 +1,25 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "automerge": true,
+    "extends": ["config:base"],
+    "labels": ["dependencies"],
+    "packageRules": [
+        {
+            "groupName": "i18next",
+            "matchPackagePatterns": ["^i18next", "^react-i18next$"]
+        },
+        {
+            "groupName": "vite + @vitejs",
+            "matchPackagePatterns": ["^vite$", "^@vitejs/"]
+        },
+        {
+            "groupName": "vitest + @vitest",
+            "matchPackagePatterns": ["^vitest$", "^@vitest/"]
+        },
+        {
+            "groupName": "stylelint",
+            "matchPackagePatterns": ["^stylelint$", "^stylelint-"]
+        }
+    ],
+    "platformAutomerge": true
+}
