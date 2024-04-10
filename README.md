@@ -13,7 +13,7 @@ This repository contains a variety of configuration files that can be used in de
   - Javascript
   - Typescript
 
-## 📦 Installation
+## 📲 Installation
 
 ### Prettier
 
