@@ -16,7 +16,7 @@
     },
     "devDependencies": {
         "@chewbaccacookie/prettier-config": "file:../prettier",
-        "eslint": "8.45.0"
+        "eslint": "8.57.1"
     },
     "dependencies": {
         "@chewbaccacookie/eslint-config-base": "^1.0.0",
