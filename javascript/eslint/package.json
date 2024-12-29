@@ -1,0 +1,41 @@
+{
+    "name": "@chewbaccacookie/eslint-config",
+    "author": "ChewbaccaCookie",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "release": "npm publish --access public"
+    },
+    "exports": {
+        ".": "./js-config.js",
+        "./typescript": "./ts-config.js",
+        "./react": "./js-react-config.js",
+        "./react-typescript": "./ts-react-config.js",
+        "./defaults": "./defaults.js"
+    },
+    "peerDependencies": {
+        "@chewbaccacookie/prettier-config": ">=1.1.0",
+        "eslint": ">=9.16.0",
+        "typescript": ">4.0.0"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "devDependencies": {
+        "@chewbaccacookie/prettier-config": "file:../prettier",
+        "eslint": "^9.17.0"
+    },
+    "dependencies": {
+        "@eslint/js": "^9.17.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prefer-arrow-functions": "^3.4.1",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-react": "^7.37.3",
+        "eslint-plugin-react-refresh": "^0.4.16",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-unicorn": "^56.0.1",
+        "eslint-plugin-unused-imports": "^4.1.4",
+        "globals": "^15.14.0",
+        "typescript-eslint": "^8.18.2"
+    }
+}

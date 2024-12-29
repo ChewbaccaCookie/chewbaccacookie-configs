@@ -1,5 +1,3 @@
-require("@rushstack/eslint-patch/modern-module-resolution");
+import config from "./javascript/eslint-config/js-config";
 
-module.exports = {
-    extends: "@chewbaccacookie/base",
-};
+export default [...config];

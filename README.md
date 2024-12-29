@@ -7,11 +7,8 @@ This repository contains a variety of configuration files that can be used in de
 - **Renovate**
 - **Prettier**
 - **Eslint**
-  - Javascript
-  - Typescript
-- **React**
-  - Javascript
-  - Typescript
+  - Base (Javascript and Typescript)
+  - React (Javascript and Typescript)
 
 ## 📲 Installation
 
@@ -31,44 +28,34 @@ Then, create a `.prettierrc` file in your project root with the following entry:
 
 ### Eslint
 
-#### Vanilla Javascript
-
-For non-React projects, install the Eslint configuration package by running:
+Install the necessary packages:
 
 ```bash
-npm i -D @chewbaccacookie/eslint-config-base
+npm install -D eslint@9 prettier @chewbaccacookie/eslint-config @chewbaccacookie/prettier-config@1.1
 ```
 
-Now create a `.eslintrc.cjs` file in your project root with the following entry:
+Create `eslint.config.js` in your project root and add the appropriate configuration:
 
 ```javascript
-require("@rushstack/eslint-patch/modern-module-resolution");
+// Base configuration for javascript
+import config from "@chewbaccacookie/eslint-config";
 
-module.exports = {
-    "extends": "@chewbaccacookie/base"
-    // or
-    "extends": "@chewbaccacookie/base/typescript"
-}
-```
+export default [...config];
 
-#### React Javascript
+// Base configuration for typescript
+import config from "@chewbaccacookie/eslint-config/typescript";
 
-For React projects, use:
+export default [...config];
 
-```bash
-npm i -D @chewbaccacookie/eslint-config-react
-```
+// For React projects
+import config from "@chewbaccacookie/eslint-config/react";
 
-Now create a `.eslintrc.cjs` file in your project root with the following entry:
+export default [...config];
 
-```javascript
-require("@rushstack/eslint-patch/modern-module-resolution");
+// For React projects with Typescript
+import config from "@chewbaccacookie/eslint-config/react-typescript";
 
-module.exports = {
-    "extends": "@chewbaccacookie/react"
-    // or
-    "extends": "@chewbaccacookie/react/typescript"
-}
+export default [...config];
 ```
 
 ### Renovate
