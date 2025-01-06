@@ -1,3 +1,4 @@
+import { FlatCompat } from "@eslint/eslintrc";
 import globals from "globals";
 import { config, configs } from "typescript-eslint";
 
@@ -5,6 +6,8 @@ import { defaultIgnoreConfig } from "./defaults.js";
 import { jsExtensions } from "./js-config.js";
 import { jsReactConfig } from "./js-react-config.js";
 import { tsConfig } from "./ts-config.js";
+
+const compat = new FlatCompat();
 
 export const tsReactConfig = {
     ...tsConfig,
@@ -30,4 +33,4 @@ export const tsReactConfig = {
         ...tsConfig.rules,
     },
 };
-export default config(...configs.recommended, tsReactConfig, defaultIgnoreConfig);
+export default config(...configs.recommended, ...compat.extends("plugin:react-hooks/recommended"), tsReactConfig, defaultIgnoreConfig);

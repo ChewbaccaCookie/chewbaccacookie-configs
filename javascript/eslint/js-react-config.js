@@ -1,3 +1,4 @@
+import { FlatCompat } from "@eslint/eslintrc";
 import reactPlugin from "eslint-plugin-react";
 import reactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
@@ -5,6 +6,8 @@ import globals from "globals";
 import { defaultIgnoreConfig } from "./defaults.js";
 import { jsConfig, jsExtensions } from "./js-config.js";
 import { reactRules } from "./rules/react.js";
+
+const compat = new FlatCompat();
 
 export const jsReactConfig = {
     ...jsConfig,
@@ -31,4 +34,4 @@ export const jsReactConfig = {
     },
 };
 
-export default [...jsExtensions, jsReactConfig, defaultIgnoreConfig];
+export default [...jsExtensions, ...compat.extends("plugin:react-hooks/recommended"), jsReactConfig, defaultIgnoreConfig];

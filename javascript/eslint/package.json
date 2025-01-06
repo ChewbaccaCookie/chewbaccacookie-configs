@@ -1,7 +1,7 @@
 {
     "name": "@chewbaccacookie/eslint-config",
     "author": "ChewbaccaCookie",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "type": "module",
     "scripts": {
         "release": "npm publish --access public"
@@ -31,6 +31,7 @@
         "eslint-plugin-prefer-arrow-functions": "^3.4.1",
         "eslint-plugin-prettier": "^5.2.1",
         "eslint-plugin-react": "^7.37.3",
+        "eslint-plugin-react-hooks": "^5.1.0",
         "eslint-plugin-react-refresh": "^0.4.16",
         "eslint-plugin-simple-import-sort": "^12.1.1",
         "eslint-plugin-unicorn": "^56.0.1",
