@@ -1,30 +1,126 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "automerge": true,
-    "extends": ["config:base"],
-    "labels": ["dependencies"],
-    "packageRules": [
-        {
-            "groupName": "i18next",
-            "matchPackagePatterns": ["^i18next", "^react-i18next$"]
-        },
-        {
-            "groupName": "vite + @vitejs",
-            "matchPackagePatterns": ["^vite$", "^@vitejs/"]
-        },
-        {
-            "groupName": "vitest + @vitest",
-            "matchPackagePatterns": ["^vitest$", "^@vitest/"]
-        },
-        {
-            "groupName": "stylelint",
-            "matchPackagePatterns": ["^stylelint$", "^stylelint-"]
-        },
-        {
-            "matchPackagePatterns": ["eslint"],
-            "matchUpdateTypes": ["major"],
-            "enabled": false
-        }
-    ],
-    "platformAutomerge": true
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automerge": true,
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "groupName": "i18next",
+      "matchPackagePatterns": [
+        "^i18next",
+        "^react-i18next$"
+      ]
+    },
+    {
+      "groupName": "vite + @vitejs",
+      "matchPackagePatterns": [
+        "^vite$",
+        "^@vitejs/"
+      ]
+    },
+    {
+      "groupName": "vitest + @vitest",
+      "matchPackagePatterns": [
+        "^vitest$",
+        "^@vitest/"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "@types/node"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "enabled": false,
+      "matchPackageNames": [
+        "node"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "groupName": "remarkjs",
+      "matchPackagePatterns": [
+        "^react-markdown$",
+        "^remark-"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "groupName": "rollup",
+      "matchPackagePatterns": [
+        "^rollup$",
+        "^@rollup/"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "enabled": false,
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackagePatterns": [
+        "actions/checkout"
+      ]
+    },
+    {
+      "enabled": false,
+      "matchPackagePatterns": [
+        "actions/upload-pages-artifact",
+        "actions/deploy-pages"
+      ]
+    },
+    {
+      "enabled": false,
+      "matchPackagePrefixes": [
+        "mcr.microsoft.com/devcontainers"
+      ]
+    },
+    {
+      "enabled": false,
+      "matchPackagePatterns": [
+        "^eslint"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "groupName": "dev dependencies",
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ]
+    },
+    {
+      "groupName": "non-major dependencies",
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ]
+    }
+  ],
+  "platformAutomerge": true
 }
