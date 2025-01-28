@@ -1,6 +1,6 @@
 {
     "name": "@chewbaccacookie/prettier-config",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "main": "./prettier.config.js",
     "type": "module",
     "scripts": {
@@ -10,7 +10,8 @@
         "prettier": ">=3.0.0"
     },
     "dependencies": {
-        "prettier-plugin-sort-json": "^4.0.0"
+        "prettier-plugin-sort-json": "^4.0.0",
+        "prettier-plugin-tailwindcss": "^0.6.11"
     },
     "devDependencies": {
         "prettier": "^3.4.2"

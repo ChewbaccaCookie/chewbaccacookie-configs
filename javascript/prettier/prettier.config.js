@@ -3,7 +3,7 @@ export default {
     bracketSameLine: true,
     endOfLine: "auto",
     jsonRecursiveSort: true,
-    plugins: ["prettier-plugin-sort-json"],
+    plugins: ["prettier-plugin-sort-json", "prettier-plugin-tailwindcss"],
     printWidth: 140,
     semi: true,
     singleQuote: false,
