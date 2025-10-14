@@ -7,7 +7,8 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "lint": "eslint . --max-warnings=0",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "test": "vitest run"
     },
     "dependencies": {
         "react": "^19.2.0",
@@ -22,6 +23,11 @@
         "@chewbaccacookie/prettier-config": "file:../../javascript/prettier",
         "@chewbaccacookie/eslint-config": "file:../../javascript/eslint",
         "eslint": "^9.37.0",
-        "prettier": "^3.6.2"
+        "prettier": "^3.6.2",
+        "@testing-library/react": "^16.0.1",
+        "@testing-library/jest-dom": "^6.6.3",
+        "vitest": "^2.1.8",
+        "@vitest/coverage-v8": "^2.1.8",
+        "jsdom": "^26.1.0"
     }
 }

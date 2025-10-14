@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
         "start": "node index.js",
-        "lint": "eslint . --max-warnings=0"
+        "lint": "eslint . --max-warnings=0",
+        "test": "vitest run"
     },
     "dependencies": {
         "express": "^5.1.0"
@@ -14,7 +15,10 @@
     "devDependencies": {
         "@chewbaccacookie/eslint-config": "file:../../javascript/eslint",
         "@chewbaccacookie/prettier-config": "file:../../javascript/prettier",
+        "@vitest/coverage-v8": "^2.1.8",
         "eslint": "^9.37.0",
-        "prettier": "^3.6.2"
+        "prettier": "^3.6.2",
+        "supertest": "^7.0.0",
+        "vitest": "^2.1.8"
     }
 }
