@@ -4,7 +4,8 @@
     "version": "1.1.1",
     "type": "module",
     "scripts": {
-        "release": "npm publish --access public"
+        "release": "npm publish --access public",
+        "test": "vitest run"
     },
     "exports": {
         ".": "./js-config.js",
@@ -23,7 +24,8 @@
     },
     "devDependencies": {
         "@chewbaccacookie/prettier-config": "file:../prettier",
-        "eslint": "^9.17.0"
+        "eslint": "^9.17.0",
+        "vitest": "^1.6.0"
     },
     "dependencies": {
         "@eslint/js": "^9.17.0",
