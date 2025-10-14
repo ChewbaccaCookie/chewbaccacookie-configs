@@ -12,10 +12,10 @@
         "examples/*"
     ],
     "devDependencies": {
-        "@chewbaccacookie/eslint-config-base": "file:javascript/eslint-base",
+        "@chewbaccacookie/eslint-config": "file:javascript/eslint",
         "@chewbaccacookie/prettier-config": "file:javascript/prettier",
-        "eslint": "^8.56.0",
-        "prettier": "^3.1.1",
-        "prettier-plugin-sort-json": "^4.0.0"
+        "eslint": "^9.37.0",
+        "prettier": "^3.6.2",
+        "prettier-plugin-sort-json": "^4.1.1"
     }
 }

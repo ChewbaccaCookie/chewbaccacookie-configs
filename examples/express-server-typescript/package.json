@@ -10,14 +10,14 @@
         "lint": "eslint . --max-warnings=0"
     },
     "dependencies": {
-        "typescript": "^5.1.6"
+        "typescript": "^5.9.3"
     },
     "devDependencies": {
-        "@chewbaccacookie/eslint-config-base": "file:../../javascript/eslint-base",
+        "@chewbaccacookie/eslint-config": "file:../../javascript/eslint",
         "@chewbaccacookie/prettier-config": "file:../../javascript/prettier",
-        "@types/express": "^4.17.17",
-        "eslint": "^8.44.0",
-        "express": "^4.18.2",
-        "prettier": "^2.8.8"
+        "@types/express": "^5.0.3",
+        "eslint": "^9.37.0",
+        "express": "^5.1.0",
+        "prettier": "^3.6.2"
     }
 }

@@ -10,17 +10,17 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0"
     },
     "devDependencies": {
-        "@chewbaccaCookie/prettier-config": "file:../../javascript/prettier",
-        "@chewbaccaCookie/eslint-config-react": "file:../../javascript/eslint-react",
-        "@types/react": "^18.0.37",
-        "@types/react-dom": "^18.0.11",
-        "@vitejs/plugin-react": "^4.0.0",
-        "eslint": "^8.44.0",
-        "prettier": "^2.8.8",
-        "vite": "^4.3.9"
+        "@chewbaccacookie/prettier-config": "file:../../javascript/prettier",
+        "@chewbaccacookie/eslint-config": "file:../../javascript/eslint",
+        "@types/react": "^19.2.2",
+        "@types/react-dom": "^19.2.2",
+        "@vitejs/plugin-react": "^5.0.4",
+        "eslint": "^9.37.0",
+        "prettier": "^3.6.2",
+        "vite": "^7.1.9"
     }
 }
