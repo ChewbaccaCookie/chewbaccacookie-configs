@@ -20,13 +20,13 @@ jobs:
           cache: npm
 
       - name: Install dependencies (root)
-        run: npm ci
+        run: npm install
 
       - name: Install workspace deps (eslint)
-        run: npm --prefix javascript/eslint ci
+        run: npm --prefix javascript/eslint install
 
       - name: Install workspace deps (prettier)
-        run: npm --prefix javascript/prettier ci
+        run: npm --prefix javascript/prettier install
 
       - name: Lint (examples and packages)
         run: npm run lint
