@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "format": "prettier --write \"./**/*.{ts,tsx,js,jsx,json,mjml}\"",
-        "lint": "npm run --if-present --workspaces lint",
+        "lint": "eslint . --max-warnings=0",
         "test": "npm run --workspaces --if-present test"
     },
     "workspaces": [
@@ -13,9 +13,8 @@
         "examples/*"
     ],
     "devDependencies": {
-        "@chewbaccacookie/eslint-config-base": "file:javascript/eslint-base",
         "@chewbaccacookie/prettier-config": "file:javascript/prettier",
-        "eslint": "^8.56.0",
+        "eslint": "^9.17.0",
         "prettier": "^3.1.1",
         "prettier-plugin-sort-json": "^4.0.0"
     }
