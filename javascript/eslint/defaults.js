@@ -1,5 +1,6 @@
 export const defaultIgnore = [
     "**/node_modules/",
+    "**/package-lock.json",
     "**/.cache",
     "**/dist/",
     "**/build/",
@@ -40,6 +41,9 @@ export const defaultIgnore = [
     "vitest.setup.mjs",
     "vitest.setup.js",
     "vitest.setup.ts",
+
+    // Legacy ESLint files we don't want to lint as source
+    "**/.eslintrc.*",
 ];
 
 export const defaultIgnoreConfig = {
