@@ -20,8 +20,8 @@
         "typescript": "^5.0.2",
         "vite": "^4.3.9",
         "@chewbaccacookie/prettier-config": "file:../../javascript/prettier",
-        "@chewbaccacookie/eslint-config-react": "file:../../javascript/eslint-react",
-        "eslint": "^8.44.0",
-        "prettier": "^2.8.8"
+        "@chewbaccacookie/eslint-config": "file:../../javascript/eslint",
+        "eslint": "^9.17.0",
+        "prettier": "^3.4.2"
     }
 }

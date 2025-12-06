@@ -4,7 +4,8 @@
     "main": "./prettier.config.js",
     "type": "module",
     "scripts": {
-        "release": "npm publish --access public"
+        "release": "npm publish --access public",
+        "test": "vitest run"
     },
     "peerDependencies": {
         "prettier": ">=3.0.0"
@@ -14,6 +15,7 @@
         "prettier-plugin-tailwindcss": "^0.6.11"
     },
     "devDependencies": {
-        "prettier": "^3.4.2"
+        "prettier": "^3.4.2",
+        "vitest": "^1.6.0"
     }
 }
