@@ -28,10 +28,12 @@ Then, create a `.prettierrc` file in your project root with the following entry:
 
 ### Eslint
 
+The ESLint configuration requires Node.js 20.19+, 22.13+, or 24+ and supports ESLint 9 and TypeScript 4.8.4 through 6.0. Use Node.js 24 to run this repository's tests. ESLint 10 and TypeScript 7 are pending support from the React ESLint plugin and typescript-eslint, respectively.
+
 Install the necessary packages:
 
 ```bash
-npm install -D eslint@9 prettier @chewbaccacookie/eslint-config @chewbaccacookie/prettier-config@1.1
+npm install -D eslint@9 prettier @chewbaccacookie/eslint-config @chewbaccacookie/prettier-config@1.3
 ```
 
 Create `eslint.config.js` in your project root and add the appropriate configuration:
