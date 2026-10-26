@@ -1,7 +1,7 @@
 {
     "name": "@chewbaccacookie/eslint-config",
     "author": "ChewbaccaCookie",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "type": "module",
     "scripts": {
         "release": "npm publish --access public",
