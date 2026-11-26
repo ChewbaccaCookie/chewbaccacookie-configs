@@ -16,6 +16,6 @@
         "@chewbaccacookie/prettier-config": "file:javascript/prettier",
         "eslint": "9.39.5",
         "prettier": "3.10.1",
-        "prettier-plugin-sort-json": "4.2.0"
+        "prettier-plugin-sort-json": "4.3.0"
     }
 }
